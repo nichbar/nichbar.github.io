@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Another Clawer Script · Nich's Blog</title><meta name="description" content="Another Clawer Script - Nich"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#4fc08d"><link rel="short icon" href="/favicon.ico"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script>var host = "nich.work";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+   window.location.protocol = "https";</script></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/logo.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://www.github.com/nichbar" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Another Clawer Script</h1><div class="post-info">Mar 13, 2016</div><div class="post-content"><blockquote>
+<p>JavaScript才是我的Mother Tongue！</p>
+</blockquote>
+<a id="more"></a>
+<p>骗你的~</p>
+<h3 id="Inspired-by-Thunder-vip"><a href="#Inspired-by-Thunder-vip" class="headerlink" title="Inspired by Thunder-vip"></a>Inspired by <a href="https://github.com/nswbmw/thunder-vip" target="_blank" rel="noopener">Thunder-vip</a></h3><p>看到别人写了个控制台全局命令来爬数据的Script觉得很酷，模仿着写了个<a href="https://github.com/nichbar/share-vip" target="_blank" rel="noopener">share-vip</a>，基于node.js</p>
+<p>发现node制作控制台全局命令并不难，方法：</p>
+<ol>
+<li>在项目根目录创建bin文件夹，并在里面创建一个没有js后缀的js文件，以想达到的控制台命令来命名</li>
+<li>在该js文件头添加一句<code>#!/usr/bin/env node</code> 来添加到node的环境命令里</li>
+<li>然后这个js文件该实现什么逻辑就完全自己决定了</li>
+<li>最重要的是安装的时候必须指定-g（全局）才能实现控制台全局命令</li>
+</ol>
+<p>脚本的主要逻辑是先用<a href="https://github.com/request/request" target="_blank" rel="noopener">request</a>来执行网络请求，然后<a href="https://github.com/cheeriojs/cheerio" target="_blank" rel="noopener">cheerio</a>来访问获取到的DOM，接着用<a href="https://zh.wikipedia.org/zh/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F" target="_blank" rel="noopener">正则表达式</a>把需要的东西匹配出来，最后用到了<a href="https://github.com/chalk/chalk" target="_blank" rel="noopener">chalk</a>来着色命令行的输出。</p>
+<p>噢对了，我还好好的复习了一番正则表达式…</p>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>说回这个脚本本身，用法很简单，在控制台执行<code>npm install share-vip -g</code>就可以安装这个包。（当然，前提是你的机器上面有node.js和npm，如果没有请到<a href="https://nodejs.org" target="_blank" rel="noopener">node官网</a>下载）</p>
+<p>然后打开控制台输入<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vip thunder</span><br><span class="line">vip iqiyi</span><br><span class="line">vip youku</span><br></pre></td></tr></table></figure></p>
+<p>分别代表迅雷、爱奇艺和优酷，然后控制台就有从某分享网站上抓取回来的帐号和密码了~</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2017/windowInsets&amp;fitsSystemWindows/" class="prev">PREV</a><a href="/2016/top-chrome-extension/" class="next">NEXT</a></div><div class="copyright"><p>© 2016 - 2019 <a href="https://nich.work">Nich</a>, blow through the ceiling.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-103473739-1",'auto');ga('send','pageview');</script></body></html>
