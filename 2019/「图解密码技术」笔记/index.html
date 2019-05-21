@@ -17,7 +17,7 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 <h4 id="0-2-简单替换密码"><a href="#0-2-简单替换密码" class="headerlink" title="0.2 简单替换密码"></a>0.2 简单替换密码</h4><p><strong>简单替换加密</strong>是一种以偏移（如凯撒密码）或逆转或更复杂方式改变字母表上的字母顺序，并以此顺序书写的加密方式 。</p>
 <p>如将字母表 <code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code> 改变顺序为 <code>ZEBRASCDFGHIJKLMNOPQTUVWXY</code> 即可把明文 <code>flee at once. we are discovered!</code> 加密并省略掉标点成 <code>SIAA ZQ LKBA VA ZOA RFPBLUAOAR</code></p>
 <p>简单替换加密一般不容易被暴力破解但可通过<strong>频率分析</strong>进行破解</p>
-<h4 id="1-对称密码"><a href="#1-对称密码" class="headerlink" title="1. 对称密码"></a>1. 对称密码</h4><p>对称密码又称共享密钥密码，用相同的密钥进行加密和解密，如下图</p>
+<h3 id="1-对称密码"><a href="#1-对称密码" class="headerlink" title="1. 对称密码"></a>1. 对称密码</h3><p>对称密码又称共享密钥密码，用相同的密钥进行加密和解密，如下图</p>
 <p><img src="https://i.loli.net/2019/05/04/5ccd5cf118b18.png" alt="Powered by Powerpoint ：）" width="580"></p>
 <h4 id="1-1-一次性密码本"><a href="#1-1-一次性密码本" class="headerlink" title="1.1 一次性密码本"></a>1.1 一次性密码本</h4><p><strong>一次性密码本 </strong>(one time pad) 是一种将明文与密钥 (一串比特序列) 进行异或 (XOR) 运算获得密文，密文与密钥进行异或运算获得明文的加密算法。</p>
 <p>在理论上此密码算法是牢不可破的，但实际操作起来有如下问题</p>
