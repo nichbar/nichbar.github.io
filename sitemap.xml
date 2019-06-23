@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nich.work/about/index.html</loc>
+    
+    <lastmod>2019-06-23T05:22:43.628Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://nich.work/2018/kotlin-extension/</loc>
     
     <lastmod>2019-06-23T04:02:36.075Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://nich.work/2017/unit-test-of-android/</loc>
     
     <lastmod>2019-04-05T08:25:02.748Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://nich.work/about/index.html</loc>
-    
-    <lastmod>2019-04-03T14:08:21.965Z</lastmod>
     
   </url>
   
